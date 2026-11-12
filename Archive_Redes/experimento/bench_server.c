@@ -20,7 +20,7 @@ typedef struct {
 } ClientStat;
 
 pthread_mutex_t stats_mutex = PTHREAD_MUTEX_INITIALIZER;
-unsigned long long total_ bytes_all_clients = 0;
+unsigned long long total_bytes_all_clients = 0;
 int active_clients = 0;
 int completed_clients = 0;
 int expected_clients = 0;

@@ -35,7 +35,7 @@ for N in {1..10}; do
         wait $SERVER_PID 2>/dev/null
 
         # Extrai a metrica e salva no CSV
-        LINE=$(grep "CSV_OUT" server_tmp.log | cut -d',' -f2-)
+        LINE=$(grep "CSV_OUT" server_tmp.log | cut -d',' -f3-)
         echo "$N,$R,$LINE" >> resultados.csv
     done
 done
